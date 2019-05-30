@@ -24,7 +24,13 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Helmet title={'Home Page'} />
+      <Helmet>
+        <title>Home Page</title>
+        <meta
+          name="google-site-verification"
+          content="FDH-RZJyq3YCxdHyMO1tEDFVlENxqKcJlYCWPFzCQ34"
+        />
+      </Helmet>
       <Header title="Home of braves">
         Unconventional tech blog with distilled cognitive load. 🧠
       </Header>

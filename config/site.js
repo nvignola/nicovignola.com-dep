@@ -16,5 +16,4 @@ module.exports = {
   themeColor: '#ffe883',
   backgroundColor: '#fff6ca',
   twitter: '@MrN1ck', // Twitter Username
-  googleSiteVerification: 'FDH-RZJyq3YCxdHyMO1tEDFVlENxqKcJlYCWPFzCQ34',
 };
