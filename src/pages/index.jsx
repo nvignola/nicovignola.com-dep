@@ -28,7 +28,7 @@ const Index = ({ data }) => {
         <title>Home Page</title>
         <meta
           name="google-site-verification"
-          content="FDH-RZJyq3YCxdHyMO1tEDFVlENxqKcJlYCWPFzCQ34"
+          content="uBIQIanmyw9CjY5WiR8UP2hZExCATOMstcKHR2DL3pE"
         />
       </Helmet>
       <Header title="Home of braves">
