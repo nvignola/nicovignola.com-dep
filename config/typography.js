@@ -1,9 +1,12 @@
 import Typography from 'typography';
 
 export const typography = new Typography({
-  title: 'GatsbyTutorial',
+  title: 'NicoVignolaBlog',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
+  logo: [
+    'Major Mono Display'
+  ],
   headerFontFamily: [
     'Candal',
     '-apple-system',

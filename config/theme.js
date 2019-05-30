@@ -1,23 +1,38 @@
 export const colors = {
+  link: '#038f08',
+  linkHover: '#48ba4d',
   white: {
-    base: '#fff',
+    base: '#f8f8ff',
     light: '#f0f0f0',
     grey: '#cecece',
     dark: '#a0afd7',
   },
   black: {
-    base: '#333438',
+    base: '#252323',
+    darklight: '#31393C',
     light: '#4b4e57',
     blue: '#2e3246',
   },
   primary: {
-    base: '#3498db',
+    base: '#1446A0',
     light: '#3e5fbc',
-    dark: '#284187',
+    dark: '#001427',
+    accent: '#aafac8', // mint green
   },
   background: {
-    light: '#3e5fbc',
-    dark: '#284187',
+    base: '#feec8f',
+    light: '#fff6ca',
+    dark: '#ffd916',
+    navy: '#416aad',
+  },
+  test: {
+    purple: '#4b017d',
+    fucsia: '#ff4080',
+    lille: '#f0e6f6',
+    blueDark: '#2c58a0',
+    blueLight: '#4285f4',
+    title: '#d21e0f',
+    title2: '#FF0266',
   },
 };
 
@@ -44,9 +59,13 @@ export const shadow = {
 
 export const gradient = {
   // eslint-disable-next-line
-  leftToRight: `linear-gradient(-45deg, ${colors.background.light} 0%, ${colors.background.dark} 100%)`,
+  leftToRight: `linear-gradient(-45deg, ${colors.test.blueDark} 0%, ${
+    colors.test.blueLight
+  } 100%)`,
   // eslint-disable-next-line
-  rightToLeft: `linear-gradient(45deg, ${colors.background.light} 0%, ${colors.background.dark} 100%)`,
+  rightToLeft: `linear-gradient(45deg, ${colors.test.blueDark} 0%, ${
+    colors.test.blueLight
+  } 100%)`,
 };
 
 export const transition = {
@@ -66,6 +85,8 @@ export const theme = {
     l: '1200px',
   },
   fontFamily: {
+    // eslint-disable-next-line
+    logo: `'Major Mono Display'`,
     // eslint-disable-next-line
     body: `Open Sans,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
     // eslint-disable-next-line

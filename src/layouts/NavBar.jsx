@@ -8,21 +8,26 @@ const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
   align-items: center;
+  .logo {
+    color: white;
+    font-family: ${props => props.theme.fontFamily.logo};
+    font-size: 1.2rem;
+  }
 `;
 
 const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
-  font-family: ${props => props.theme.fontFamily.body};
+  font-family: ${props => props.theme.fontFamily.logo};
   font-weight: 500;
   font-size: 1.1rem;
   align-items: center;
   a {
-    color: ${props => props.theme.colors.white.base};
+    color: white;
     margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.white.grey};
+      color: ${props => props.theme.colors.black.darklight};
     }
   }
 `;
@@ -30,11 +35,11 @@ const Nav = styled.nav`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      <img src={logo} alt="Gatsby Logo" />
+      <span className="logo">Nico ViGnoLA</span>
+      {/* <img src={logo} alt="Gatsby Logo" /> */}
     </StyledLink>
     <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/blog">Blog</Link>
+      {/* <Link to="/blog">Blog</Link> */}
       <Link to="/about">About</Link>
     </Nav>
   </Headroom>

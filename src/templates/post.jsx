@@ -10,7 +10,7 @@ const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: #ffe082;
   box-shadow: ${props => props.theme.shadow.suggestion};
 `;
 const PostSuggestion = styled.div`
@@ -35,8 +35,9 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header title={title} cover={image} />
       <Container>
+        {date && <h4 className="post-date">{date}</h4>}
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
@@ -85,7 +86,7 @@ export const query = graphql`
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
+              duotone: { highlight: "#4285f4", shadow: "#2c58a0" }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }

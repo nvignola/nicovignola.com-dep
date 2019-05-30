@@ -11,6 +11,10 @@ const Wrapper = styled.section`
   height: 100%;
   flex: 1;
 
+  .post-date {
+    text-align: right;
+  }
+
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 90%;
   }

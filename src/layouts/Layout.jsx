@@ -4,6 +4,7 @@ import { css, Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import 'typeface-open-sans';
 import 'typeface-candal';
+import 'typeface-major-mono-display';
 import { SEO } from 'components';
 import { NavBar, Footer } from 'layouts';
 import theme from '../../config/theme';
@@ -30,6 +31,7 @@ const Layout = ({ children }) => (
           }
           html,
           body {
+            background-color: white;
             width: 100%;
             height: 100%;
             margin: 0;
@@ -50,8 +52,15 @@ const Layout = ({ children }) => (
             text-decoration: none;
             color: ${theme.colors.linkHover};
           }
+          p {
+            // color: ${theme.colors.white.light};
+            color: #333;
+          }
           h1 {
             font-family: ${theme.fontFamily.heading};
+          }
+          h3 {
+            color: ${theme.colors.test.title2};
           }
 
           ${headroom}

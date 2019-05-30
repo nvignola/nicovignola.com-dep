@@ -4,8 +4,8 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
-  clip-path: polygon(100% 0, 0 0, 0 70%, 50% 100%, 100% 70%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 60%, 90% 100%, 100% 70%);
+  clip-path: polygon(100% 0, 0 0, 0 60%, 90% 100%, 100% 70%);
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
     clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
@@ -23,7 +23,7 @@ const Wrapper = styled.header`
 `;
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.white.base};
+  color: white;
   z-index: 0;
   position: absolute;
   top: 50%;
@@ -46,10 +46,10 @@ const Subtitle = styled.p`
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
-    <Img fluid={cover || {} || [] || ''} />
+    {cover && <Img fluid={cover || {} || [] || ''} />}
     <Text>
       <h1>{title}</h1>
-      <h3>{date}</h3>
+      {date && <h3>{date}</h3>}
 
       {children && <Subtitle>{children}</Subtitle>}
     </Text>

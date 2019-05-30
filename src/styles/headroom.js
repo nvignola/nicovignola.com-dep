@@ -38,17 +38,17 @@ const headroom = css`
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.white.light};
+    background-color: ${theme.colors.background.navy};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {
-        color: ${theme.colors.black.base};
+        color: white;
         &:hover {
-          border-color: ${theme.colors.black.base};
-          color: ${theme.colors.black.base};
+          border-color: ${theme.colors.black.darklight};
+          color: white;
         }
         &:focus {
-          color: ${theme.colors.black.base};
+          color: white;
         }
       }
     }

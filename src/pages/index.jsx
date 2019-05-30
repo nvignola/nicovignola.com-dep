@@ -25,7 +25,9 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Header title="Home of braves">
+        Unconventional tech blog with distilled cognitive load. 🧠
+      </Header>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
