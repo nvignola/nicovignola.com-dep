@@ -18,13 +18,13 @@ const About = center => (
         >
           Kyle Simpson
         </a>
-        ... and after some other time, I managed to arrive in this world and my
+        ... and after some time, I managed to arrive in this world and my
         story started from that point in history.
       </p>
       <p>
         I was born in a city called Bari in the south of Italy in a region called
         Puglia. When I was 8 years old, my parents and I decided to move to
-        Rimini from Gravina in Puglia.  We moved not because there was no work for them, but due to the slow internet connection there. 
+        Rimini from Gravina in Puglia.  We moved not because there was no work for them there, but due to the slow internet connection. 
         
       </p>
       <p>
